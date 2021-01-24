@@ -1,0 +1,27 @@
+<?php
+  
+$x=array(1,2,3,"hala",10.25);
+
+$salary=array(
+    "waed" => "<img src='https://play-lh.googleusercontent.com/IMqNimCM2_Ngs5pWgJ3zttRRvIDlVc47mXXaRF7AA1XTW9c5TkWQEOdu3eeU7v7rOZU'>",
+    "anas" =>"<img src='https://play-lh.googleusercontent.com/IMqNimCM2_Ngs5pWgJ3zttRRvIDlVc47mXXaRF7AA1XTW9c5TkWQEOdu3eeU7v7rOZU'>",
+    "jenan" =>"<img src='https://play-lh.googleusercontent.com/IMqNimCM2_Ngs5pWgJ3zttRRvIDlVc47mXXaRF7AA1XTW9c5TkWQEOdu3eeU7v7rOZU'>"
+);
+
+$multi=array(array(1,2,3),
+             array(4,5,6),
+             array(7,8,9)
+);
+foreach($multi as $k=>$soso){
+	//if(is_array($soso)){}
+	//if(gettype($soso) == 'array'){}
+	if(is_array($soso)){
+		foreach ($soso as $key => $value) {
+			echo $key." ".$value."<br>";
+		}
+	}else{
+		echo $k." ".$soso."<br>";
+	}
+}
+?>
+ <a href="http://localhost/testphp/pag1.php/">Click here</a>
